@@ -1,0 +1,155 @@
+DAY 3 ASSIGNMENT REVIEW
+
+Palindrome assignment
+- we're taking input from the user and figuring out if it's a palindrome
+- set variable to equal your input, maybe call it "word"
+- run a for loop to reverse through the word
+for index in range(len(word)-1, -1, -1):
+	do something
+- create a variable for the reverse of the word outside of the function, say "reversed_word"
+- then make the results of the reverse loop add to the "reversed_word" variable
+for index in range(len(word)-1, -1, -1):
+	reversed word += word[index]
+- then compare original word and reversed word using an if statement
+for index in range(len(word)-1, -1, -1):
+	reversed word += word[index]
+	if word == reversed_word:
+  	    print("PALINDROME")
+   	else:	
+    	    print("Not a palindrome")
+- want to make this reusable? create function. this removes the user input bit because now you're passing the word variable to it when you first call it. You can also simplify the if/else bit into a simple return statment returning True if it's a palindrome and false otherwise. Then *outside* the function you have more flexibility to do things with that result.
+
+- Make your functions do only one job each as much as possible.
+
+
+
+Factorial assignment
+- again, start with taking the input from the user
+- then write a for loop again
+for index in range(1, number +1):
+	do something
+- create a variable outside the function to receive the result 
+result = 1
+for index in range(1, number +1):
+	result *= index
+print result
+
+
+Overall tips:
+- don't try to attack the entire problem at once; start with small chunks
+- game designers starting a game may have a red blob for the protagonist, a brown one for the enemy, etc. The graphics can come in after the gameplay motion has been fleshed out
+- you will be overwhelmed if you try to tackle the entire thing at once once we hit databases or other more complicated things
+- achieving small tasks will give you the confidence to move forward
+
+
+- - - - 
+DAY 4 LECTURE - DICTIONARIES 
+(We will push MODULES to tomorrow)
+
+- Dictionaries always contain *key-value pairs*
+- Values can be ints/bools/floats in addition to strings. You *can* do that with keys as well, but it's confusing, so keys are usually strings to let them be more descriptive.
+- If you want to store an airport name and its code, but together in one variable - use a dictionary
+- Dictionary keys and values are usually both strings. They are wrapped together in curly braces like:
+{"LAX": "Los Angeles International Airport"}
+
+- Dictionaries are *everywhere* online. How would you represent a single tweet, for example, as a dictionary?
+Key:			Value:
+"text"			"(contents of tweet)"
+"name"			"person's first and last name"
+"handle"			"@whomever"
+"date/time created"	"actual date and time"
+
+- You can create an empty dictionary (dict = {}) and add to it later
+- You can access the contents of the dictionary with bracket notation.
+car = {"make": "Ford", "model": "Mustang}
+
+print(car["model']) - will print "Mustang"
+
+If you try to print a key that doesn't exist, you'll get an error. You can add key-value pairs
+pretty easily:
+car["isElectric"] = False
+
+If you try to make a key but don't give it a value, you'll get an error.
+
+Look at any item on Amazon, you'll see a lot of potential key-value pairs that could comprise a dictionary together.
+Key:			Values:
+"Title"			"Widget"
+"Price"			"$19.99"
+"Description"   "This is the greatest thing on the planet!"
+"Brand"			"ACME"
+
+ACTIVITY 1 - CREATE A DICTIONARY
+- take both inputs for first and last name
+- create dictionary using inputs
+- print using string concatenation to include the "my name is" and punctuation
+print("My name is " + user["first_name"] + " " + user["last_name"]
+
+- string interpolation version: 
+(Must use single-quote version to do this, because you've used double-quotes outside of the overall phrase)
+print(f"My name is {user['last_name']}, {user['first_name']}")
+
+**********
+
+NESTED DICTIONARIES
+
+- How do we store address book information for a person who has multiple addresses (e.g. college students)? You can store a list inside of a dictionary. You can also have arrays containing dictionaries inside of the overall dictionary! The combinations are infinite.
+
+- Be on the lookout for brackets inside your dictionary - these indicate the presence of an array.
+
+- Let's go back to that theoretical Amazon product. How might we include reviews in our dictionary? We could go with an array of dictionaries.
+
+product = {"title" = "Awesome Widget", "brand" = "ACME", "reviews" = reviews}
+reviews = [{"title" = "wonderful", "rating" = 5}, {"title" = "terrible", "rating": 1}]
+
+ACTIVITIES 2 and 3 - NESTED/MULTI-NESTED DICTIONARIES
+
+- dictionaries can be on multiple lines so you can easily see everything
+- address is itself a dictionary, and the geo key within it points to yet another dictionary.
+- all properties except the ID value are strings, wrapped in quotes, even if they are numbers (we don't want to do math with someone's zip code)
+
+- install JSONView browser extension (others are out there for other browsers, though Azam recommends Chrome for development)
+
+
+ITERATING THROUGH THE DICTIONARY
+Option #1 - 
+for loops, iterating by key
+
+for key in dict:
+	print(key)
+
+- This (above) will just give print out the keys, not the values. How do you get the values? That's what we're more interested in.
+
+for key in dict:
+	print(dict[key])
+
+- This will print the values.
+
+Option #2 - 
+
+for value in bank.user.values():
+	print(values)
+
+- This will print just the values.
+
+Option #3 - 
+- Run a loop with the key, value tuple
+
+for key, value in bank.user.items():
+	print(key)
+	print(value)
+
+
+DELETING FROM A DICTIONARY
+
+del dict[key]
+
+From the Amazon product dictionary above:
+del product["title"]
+
+
+ASSIGNMENT FOR TODAY - TIPS FROM AZAM
+- use while loop to keep program going until user enters q to quit (good question, Megan!)
+- find a nicer way to display tasks than just printing the dictionary as a whole
+
+
+TOMORROW - we will cover modules

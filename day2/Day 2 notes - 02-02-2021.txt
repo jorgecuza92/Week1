@@ -1,0 +1,158 @@
+PYTHON
+
+- check what version you have in terminal by typing python --version or python3 --version
+- if you don't have python 3.something, go out and download a newer version
+- good first language to start with
+- will be using Python for 2 weeks then moving on
+- Azam recommends learning one new programming language a year, even if you don't use it in your day -to-day
+- the new hotness with Python today is MACHINE LEARNING - obviously outside the scope of this class but something you may want to look into more later
+
+- create some python folder to work in (e.g. mkdir hello-python) and empty file (touch hello.py). All python programs should be saved with the .py extension
+
+- open your .py file in your editor (vscode/atom/etc). at this point is has not yet been saved, so save within your editor (command-S/ctrl-S)
+
+- vscode has built-in terminal that lets you run your code
+
+- run file: python3 hello.py
+
+- everything we'll be doing in class will be within the terminal; there are other frameworks 
+
+DATA TYPES
+
+# symbol: comment, ignored by the computer, only for human eyes
+(JS comments //single-line, /*multi-line*/)
+(HTML comments <!-- -->)
+
+Data Types Common to all programming languages:
+String - combination of alphanumeric characters
+Integer - whole numbers, no decimal values
+Float - numbers that can have decimals 
+Boolean - True or False, Yes/No, 1/0, On/Off only - only one of two possible values, like a lightswitch
+
+Some data types are seen in other languages (money, etc) but these are common to all.
+
+VARIABLES
+Place to store a value
+name = "Spongebob"
+age = 34
+pi = 3.14159
+isOpen = True
+
+- can give your variable any name you want, except reserved words like for or while; list of reserved words can be easily Googled. Python has other uses for these words. 
+
+- escriptive names are best (x, y, z, name1, name2, name3 can be confusing) 
+
+- strings must be in quotes
+
+- python variable naming convention uses SNAKE CASE - all lowercase with underscores between words, like this: snake_case_var
+
+- CAMEL CASE is used in JavaScript and some other languages: first word lowercase, no spaces, all subsequent words start with capital letter: camelCaseVar
+
+
+CONCANTENATING STRINGS
+concantenate: fancy word for "join together"
+print (first_name + last_name)
+SpongeBobSquarePants
+
+This does not change the value of the original strings but creates a new one. Strings are IMMUTABLE - cannot be changed. This requires memory for each new string created so it's not ideal. It also gets tricky remembering to insert all the needed spaces to make a sentence look normal.
+
+
+STRING INTERPOLATION - This is the better way to do it.
+company = "DigitalCrafts"
+cohort = "Feb 2021"
+
+message = f"Welcome to {company} cohort {cohort}"
+
+It automatically inserts the variable values at the placeholder locations (where the braces are).
+This feature is common to most programming languages.
+
+
+ASKING FOR USER INPUT
+input("Please enter your full name: ")
+- This will make the program stop until it gets that user input
+- How do we use that input? Assign it to a variable.
+full_name = input("Please enter your full name: ")
+- input always returns its value as a STRING; if you need to do calculations on input we'll have to change its data type (we'll see that later)
+
+FUNCTIONS
+- help us avoid duplicate code when you need to reuse it
+- functions in Python start with DEF (definition) followed by the name of the function, parentheses for arguments, followed by a colon (don't forget the colon!. Again, remember to use descriptive names, and use snake case.
+def display_user():
+
+- In Python, indentation matters!  It doesn't use braces and end-of-line semi-colons like JavaScript, so the indentation is key to what is and isn't included within a function or within a sub-loop.
+
+- Calling a function (actually using it): type the name of the function with its parentheses. If no arguments are needed, just leave the parentheses empty.
+display_user()
+
+- functions should be small, reusable, and DO ONE AND ONE THING ONLY
+Azam: "A function to calculate a tip on a restaurant bill should not send an e-mail"
+
+- "small" is relative to what the function needs to do
+
+- you cannot call a function before you have defined it. If you wrote it starting on line 10, then go back up to line 6 and call it, this will result in an error.
+
+- Functions with arguments
+If you want to create a function to greet the user no matter what their name is, you need a variable that you can pass as an argument to the function. These are LOCAL variables - only available inside the function.
+def greet(name):
+	print(f"Hello {name}")
+
+greet("Mary")
+greet("Alex")
+etc
+
+If you try to print(name) outside this function, you will get an error.
+
+How many arguments can you pass? Hundreds. But "a good function is one with NO arguments" because it has no overload. They are easier to test and to work with. But it's the ideal scenario and you may not see it much in the real world. Functions with 1-3 arguments are the most common.
+
+RETURN VALUES
+- any line after a return in a function is NOT executed
+- why do we return values? To use it outside the function. We pass a value to a function, the function does stuff to it, and returns the new value to us.  We can then do other things with that returned value - assign it to a variable, then print it, use it in a subsequent if statement, etc.
+- a return value is a single value
+- return value type is whatever data type the function produces. If the function adds integers, the return value will be an int. If it multiplies float values, it will return a float. If it concatenates strings, it will return a string.
+
+TUPLES
+- how do you return two different pieces of information if the function stops executing after the first return statement? You need a tuple. This is common to all programming languages. Many code editors will even gray-out return statements typed after the first return statement.
+- wrap values in parentheses with commas between - this is a tuple ("my", "tuple")
+return ("my", "tuple") will give us both values
+
+def airport_name_and_code():
+	return ("Hartsfield-Jackson Atlanta International Airport", "ATL")
+
+OPTIONAL ARGUMENTS
+- argument is given a default value when first declaring the function, but you can pass in a different value when calling the function and that will overwrite it.
+- def greet_with_optional_day(name, day = "day")
+	print(name)
+	print(day)
+
+greet_with_optional_day("Bob") prints Bob and day
+greet_with_optional_day("Susan", "Friday") prints Susan and Friday
+
+TIP_CALC EXERCISE
+- converting data types to a new type:
+float()
+str()
+int()
+(more we'll get to later...)
+tuple()
+set()
+list()
+
+CONDITIONS
+- conditions always start with IF.  If I'm over 21, I can buy alcohol, etc.
+- you can set a condition that will only execute if the "if statement" is true
+- you can create or not create an else statement that will execute when the if statement is false. It's not required.
+- don't forget your indentation! all statements to be executed when the if statement is true need to be indented under the if statement.
+- ELIF: you can chain if statement this way. Say you want 3 different statements to print to the user based on their age: one for <18, one for 18-35, one for >35. One could be the if, one the elif, one the else.
+- you can put multiple conditions in your IF statement and make them both need to be true for the statement to execute (e.g. if user_age >=18 and user_citizenship = USA)
+
+GIST
+- since we haven't learned GitHub fully yet
+- go to gist.github.com
+- name your assignments and paste them in
+- you can do them as one big file or as three files, either way
+- click "Create secret gist" and Gist will create a link
+- go to our class GitHub page
+- click on Issues
+- in the comment section for the Day 2 assignments, paste the link
+
+95% of the answers to the day's assignments will be in the class code.

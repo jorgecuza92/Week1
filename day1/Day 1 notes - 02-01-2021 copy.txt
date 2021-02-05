@@ -1,0 +1,222 @@
+Team:
+
+Azam - instructor
+
+Jonathan, Luke, Katherine - DiRs
+
+Jake Stodgel - cohort manager
+jstodgel@digitalcrafts.com
+
+Angela - student success
+angela@digitalcrafts.com
+
+other ppl to know
+
+kat - ops manager
+
+liz - dir of operations (person to talk to for getting into atlanta tech village) liz@digitalcrafts.com
+
+chris - head of curriculum
+
+jake hadden/max - cofounders
+
+
+Student Success
+here to help you find "your next best step" after DigitalCrafts
+Career Prep, Career Talks, Mock Interview Training (*highly recommended*), Resume and Portfolio Reviews
+Guest Speakers, Employer Network, Job Postings
+
+Week 10 - 3 full days are all career advice
+
+Mock Interviews done through partners - senior-level developer or hiring managers with a company, go through a standard technical interview, then give you feedback. Recommended going to this toward the end of the bootcamp.
+
+Portfolio is a graduation requirement
+
+Guest Speakers - global channel has a link to all past talks
+https://docs.google.com/document/d/1GCMFi2aIYSeeCrtUK3f2cVSVEyTop6CANxWak84BRhA/edit
+
+Employer Network - DC is a "remote-first" company
+
+Follow job boards on Slack
+
+One on One coaching is available (reach out to Angela)
+
+DC has a mentorship program (will connect you to a DC grad or other developer who wants to give back their time), internship program (not everyone is interested in such a thing, but if you are, let student success now and they can hook you up with a company offering internships)
+
+help beyond program - reach out during your job search and even for your 2nd or 3rd job.
+
+How Do I Earn My Certificate?
+- prove understanding of key concepts by completion of 4 projects (front-end, full-stack, react, final portfolio project)
+- meet attendance requirements (only 7 absences allowed - being away or off-camera for more than 1 hour is considered an absence) - class is videoed but it's hard to catch up if you aren't in-person for several classes 
+- student success team has to approve your resume and portfolio
+
+Classroom 101 
+- form study group, use office hours (some every day mon-saturday)
+- can change your name in Zoom and Slack 
+- zoom 101 has been e-mailed out, instructions on screen sharing
+- office hours 5-7p mon-thurs, 9:30-10:30p Tues and Thurs
+- weekly poll sent out to see how you feel about your week
+- feedback form in Learning Portal available to submit at any time
+- can always shoot Jake a message on Slack
+- week 5 and week 10 will have 1:1s with your instructor "performance reviews" related to your 1st and second projects
+- 90% of students sign up for the mentorship program so do it now if you're interested
+
+Words of Wisdom From Grads
+- zoom will crash, just restart
+- you're paying a lot of money to have people answer the questions you're not asking
+- prioritize homework
+- talk it out, try it out, repeat
+- don't believe anyone who says your project is perfect - it could always be improved - perfection is not achievable
+
+
+Azam
+interrupt at any point with any questions
+"we have a lot of time to learn all the stuff in this course, first we'll crawl, then walk, then run"
+You'll be learning from each other not just me.
+has worked with THD, linked in, dell, blinds.com, centerpoint energy, schlumberger, etc
+all communication is on slack, nothing is really e-mailed. you can install it on your phone and put it on DND when you want.
+- code editor - use whatever you want, download atom, or juypeter, or vscode (that's the one Azam will use)
+- class is 80% technical, 20% soft skills but the soft skills are what builds your career, gets you noticed, gets you jobs. 
+- every friday will be algorithms, presentations by class members (3 per week selected at random, doesn't have to be programming/tech related, just to get you comfortable presenting info to people. 10 minutes each, can use slides but don't have to), and review
+
+Class starts at 10:00 EST, Azam opens zoom 5-10 minutes early. Sometimes if you're on at 10:05, you might be totally lost. So be here at 9:59 at the latest.
+
+Daily class timing
+usually 10:00 review, 10:30 lecture, 12:30 lab
+
+Roadmap
+week 1 and 2 - python
+week 3 - html/css/bootstrap
+week 4 onward javascript
+week 6 - frontend project - split into teams of your choice 4-5 people
+week 7 - start backend development - this is generally where the trouble usually starts
+week 8 - SQL
+week 9 - backend project (backend only two weeks). backend project teams will be chosen randomly so instructor can see how you interact with those who aren't your buddies. because that's what the job is like.
+week 10 - career week
+week 11 - intro to react
+week 12 - intro to redux
+week 13 - "advanced week" mongodb (if time), JWT authentication
+week 14 - react/redux solo project
+week 15/16 - capstone project (either working with a team or with a client you've found)
+
+Two quizzes - first around week 6, second around week 10 - just 10-15 multiple choice questions, should be no more than 20 minutes, this is just to check for understanding
+
+Physical fitness recommended - works to clear your brain and recharge your battery. this is when you'll solve a problem you've been hammering against
+
+Reading books also recommended - plan the number of pages a day that lets you get through a book in a month. the consistency is the key.
+
+Get a StackOverflow account recommended - nobody knows everything, knowing how to find what you don't know is the key
+
+Start a hobby project - create a site about something you're passionate about. All his top students had hobby projects.
+
+Start a blog - get your name and your words out there
+
+
+Success in Class
+- try on your own for 30-35 minutes of "complete struggle" before asking questions. be curious. this isn't open-heart surgery, no one will die if you make a mistake. if you're doing 20 reps of an exercise, it's those last 3 reps that are building your progress, not the first 17.
+- be curious!
+- collaborate/communicate. don't isolate yourself.
+- submit your assignments - you will have problems with your projects if you don't! not specifically required for graduation, but it will come back to bite you later. you're not validating your knowledge. Azam sample-grades the assignments - he will randomly pick 6-8 assignments from people and go through them in class. Everyone is roughly at the same level of knowledge, so if one person made a mistake, 5-6 others probably made the same mistake.
+
+Problem Solving Flow Chart
+1) work on task for 15 minutes
+2) not solved, ask stackoverflow, another student, google, etc  give this 20 minutes. This is the "deep learning" bit that really expands your knowledge
+3) not solved, asked DIR
+4) not solved or DIR busy, ask instructor
+At any point it gets solved, move to the next task.
+
+calendly.com/azam-dc  - this is if you want to schedule an individual meeting with Azam, not really for technical stuff but more of a status update/check-in, like "hey I applied for a job and got this letter that I don't know what it means"
+
+Slack channel pinned posts - go to pin just under the name of the channel - Azam just pinned the calendly link.
+
+Azam doesn't use slides at all, just does live coding, and you can download the code at the end (or watch the class video).
+DON'T FOLLOW ALONG with his code, and type what he is typing, unless he specifically asks. otherwise it is too hard to follow along, you're focused on typing and can't really absorb the info well.
+Lecture is usually not super long but has lots of activities built in - 1 to 2 max but lots of activities (10-15 minute) so you can practice what he's talking about.
+
+Breakout rooms
+
+Python setup and Command line
+
+
+COMMAND LINE:
+Launch terminal.
+*EVERYTHING* you can do in your GUI you can do in the command line. Why use the terminal? You get comfortable with it, because
+you *will* have to use it as developer. A lot!
+
+Windows vs Mac command line - check out the link on the class Day 1 Github
+
+Commands
+
+ls 
+means "list files"
+
+ls -a
+list all files, even hidden ones
+
+cd
+means "change directory"
+
+~ means root
+
+go to deskstop is cd ~/desktop
+
+touch - create files
+
+open - type open then the name  "open filename.txt" - will open in default application for that filetype
+
+open . filename will open it in the Finder so you can pick the program you want to open it in.
+
+mkdir - create folder
+
+can write content inside of files with echo - this totally overwrites whatever is inside the file currently, and only works with text. (must use quotes and will add whatever is inside the quotes only)
+
+echo "Hello World" > lecture-1.txt
+
+cat lecture-t.txt
+Hello World
+
+There are hundreds of command-line commands, but we will learn them as we need them. (When learning a new language, you don't learn every single word in the language before you start to use it!)
+
+Jump up one folder within file structure: cd ..
+
+copy file into different file (again overwriting whatever is already there if there is one):
+cp filenametobecopied newfilename
+
+move file (cut/paste):
+mv fil
+mv lecture-2.txt  ../day2
+
+If you're not moving from within the same folder, remember you have to provide enough of the path so it knows what you're trying to do.
+
+So if you're in the outer week1 folder, you'd move it like:
+mv day1/lecture-1.txt day 2
+
+For any directory your root/home folder, you can get there by tilde/name, so ~/desktop
+
+For a heavily nested structure, you don't want to cd over and over. And you may not know the whole path off the top of your head either, to type it in as cd folder 1/folder B/yetanotherfolder/blahblah.  
+You can enter the cd prefix, then drag/drop the folder from the GUI.
+
+(Tab-complete: If you start to write a long file name and hit tab, it will complete it for you.)
+
+HOW TO CREATE SHELL-SCRIPT FILES
+
+File must end in .sh
+This indicates it's a shell script.
+Commands will be executed in order, so don't try to cd into a folder you haven't created yet.
+
+To run a shell script, must be dot slash filename
+./myscript.sh
+
+By default, Mac doesn't allow you to run scripts. To provide it the permission, you must use chmod
++x means "yes, execute this file"
++r is read-only
++w is read and write
++x is execute
+can combine +xrw
+so chmod +x myscript.sh
+then run it again
+./myscript.sh
+
+Check that it ran; did it create the things you planned to create in the script?
+
+You can use scripts to automate often-done functions. You can set up a script to do backups, to fetch news from different websites and create a custom HMTL page, etc., etc.

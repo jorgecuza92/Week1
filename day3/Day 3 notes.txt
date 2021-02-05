@@ -1,0 +1,109 @@
+DAY 3 NOTES - 02/03/21
+
+ARRAYS AND LOOPS
+
+Arrays help us work with larger amounts of data. (Rather than having friend1 = alex, friend2 = steve all the way through friend200, you can put the names in an array named friends.
+Arrays use square brackets.
+
+friends = ["Tom", "Dick", "Harry"]
+
+Arrays can include mixed types of data - can have a string, boolean, and int all in the same array. This is rarely done in practice, though.
+
+Arrays are ZERO-INDEXED, meaning that the first item in the array is the "zero-th" item.
+
+If we do the following, given the above array:
+name = friends[0]
+print(name)
+
+It will print:
+Tom
+
+friends[2] points to Harry
+
+what about friends[3]?  It will give an "out of range" error. We don't have that many names in the array.
+
+What if we want to print all the elements in an array? For a small array, you could do
+print(friends[0])
+print(friends[1])
+etc
+
+but this will get repetitive very quickly, and entirely impractical for large arrays.  So...loops to the rescue!
+
+LOOPS
+A loop is a bit of code that will run repeatedly for a number of times that you set.
+
+FOR LOOP
+We can use the RANGE function within a for loop to tell Python how many times we want to run the loop.
+
+for index in range(0, 10, 1):
+	print(index)
+
+Range has 3 arguments: start, stop, step, in that order. 
+
+"Step" is how you want it to increment; you can jump by 2 or 3 with each loop if you want. The default step value is 1, so if you want to go up by 1, you can leave it off if you want.
+
+The "stop" value will make the loop run one less than the stop number. Because when the index gets to the stop number, it will evaluate that it's hit that number and STOP, not executing the code of the loop. So make your stop one past the last value you want.
+
+What is the "index" variable in the for loop above? It's just a variable that tracks where we are within the loop (Azam: "it holds the value that is being incremented").
+
+Activity 1 - Friend Loop
+
+What changes in the for loop each time it's run? The index. So the key to making this for loop run is to make whatever action you want happen to the index (or whatever name you've given the index variable).
+
+ARRAY LENGTH
+len() is a built-in function that will give you a number that tells you how many elements are in your array.
+
+with the array:
+friends = ["Tom", "Dick", "Harry"]
+
+len(friends) will return 3
+
+You can use this len() function within the range function to not have to count all the items in your array to be able to iterate through it.
+
+You can also do a "for-each" loop (C# terminology), which replaces the range function with the name of the array.
+for friend in friends:
+	print(friend)
+
+But you will need the range version of the loop if you want to go backwards through the loop, access the actual index (the number indicating where the element is within the array), or other things.
+
+Arrays and lists are ideally named with plurals: "numbers", "friends", "addresses", etc. because they represent a collection of elements.
+
+Activity 2 - Reverse Array/List
+To go backward:
+Start your range at the end of your list (referred to as len(list)-1), go to -1, and go by minus 1 each time.
+Why is the STOP value -1? Because the range function always stops one before the stop number.
+STEP value is -1 so we count down from the full length of the list.
+Why len()-1 instead of just len()? Because the array is zero-indexed. Having the full length of the list makes it look for one index past where the array actually ends.
+
+
+APPENDING TO AN ARRAY
+.append() function in Python lets us add items
+friends.append("Denise") will make the friends array above be 
+friends = ["Tom", "Dick", "Harry", "Denise"]
+
+INSERT AT SPECIFIC LOCATION
+Indicate a specific index where you want to add your new item.
+friends.insert(1, "Summer")
+friends = ["Tom", "Summer", "Dick", "Harry", "Denise"]
+
+REMOVE ITEM 
+friends.remove("Tom"
+
+REMOVE BY INDEX
+del friends[2]
+
+WHILE LOOPS
+- will run until the condition is broken or false
+
+while True:
+while 1==1:
+- this will run forever unless something is changed
+
+counter = 0
+while counter < 10:
+- this will also run forever unless you include an incrementing counter as part of the loop
+
+Lists are everywhere on websites! 
+
+Several recent assignments are often seen as interview questions - fizzbuzz, palindrome, and primes in particular.
+
